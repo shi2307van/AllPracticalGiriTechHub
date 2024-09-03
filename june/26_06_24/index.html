@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            min-height: 100px;
+            border: 1px solid black;
+        }
+        .main-header-div{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 50px;
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 40%;
+            background-color: aqua;
+            
+        }
+        .logo img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 50px;
+            padding: 10px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 60%;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu ul {
+            display: flex;
+            flex-direction: row;
+        }
+        .menu li{
+            list-style: none;
+            padding: 15px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            font-weight: 900;
+        }
+        .slider{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 100px;
+            margin-top: 10px;
+        }
+        .slider img{
+            width: 100%;
+        }
+        .main-con{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 100px;
+        }
+        .main-con .sidebar{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 20%;
+            background-color: aqua;
+        }
+        .main-con .con{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 80%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .con .ans{
+            text-align: justify;
+
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid black;
+            margin-top: 10px;
+        }
+        .row{
+            display: flex;
+            flex-direction: row; 
+            flex-basis: 32%;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .col
+        {
+            flex-basis: 32%;
+            
+        }
+        .col img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .ijt{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .col a{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .col h1{
+            position: absolute;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-header-div">
+            <div class="logo">
+                <img src="./download.jpeg" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="./WhatsApp Image 2024-06-21 at 12.59.24_d3c6ac9e.jpg" alt="">
+        </div>
+        <div class="main-con">
+            <div class="sidebar">
+                <h1>sidebar</h1>
+            </div>
+            <div class="con">
+                <div class="que">
+                    <h1>What is java ? </h1>
+                </div>
+                <div class="ans">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet vero consectetur impedit delectus soluta voluptate repellat modi corporis tempora. Quia quas laborum sequi laudantium, molestias natus quibusdam culpa esse tempore sunt corrupti praesentium maxime dicta excepturi quis officia, atque itaque aspernatur consequuntur! Eaque nesciunt non nihil repellat nisi sequi repellendus voluptate, cupiditate expedita deleniti asperiores voluptatibus perferendis laboriosam voluptates hic quia quam illum. Eum error corrupti, incidunt odit nobis dolorem porro atque omnis? Non sapiente nobis sint nulla eum? Ducimus labore eveniet tenetur consectetur animi aliquid quasi. Ipsa autem, asperiores ullam quod maxime nihil maiores tempore! Dolorem, distinctio quaerat!</p>
+                </div>
+                <div class="que">
+                    <h1>What is java ? </h1>
+                </div>
+                <div class="ans">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet vero consectetur impedit delectus soluta voluptate repellat modi corporis tempora. Quia quas laborum sequi laudantium, molestias natus quibusdam culpa esse tempore sunt corrupti praesentium maxime dicta excepturi quis officia, atque itaque aspernatur consequuntur! Eaque nesciunt non nihil repellat nisi sequi repellendus voluptate, cupiditate expedita deleniti asperiores voluptatibus perferendis laboriosam voluptates hic quia quam illum. Eum error corrupti, incidunt odit nobis dolorem porro atque omnis? Non sapiente nobis sint nulla eum? Ducimus labore eveniet tenetur consectetur animi aliquid quasi. Ipsa autem, asperiores ullam quod maxime nihil maiores tempore! Dolorem, distinctio quaerat!</p>
+                </div>
+                <div class="que">
+                    <h1>What is java ? </h1>
+                </div>
+                <div class="ans">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eveniet vero consectetur impedit delectus soluta voluptate repellat modi corporis tempora. Quia quas laborum sequi laudantium, molestias natus quibusdam culpa esse tempore sunt corrupti praesentium maxime dicta excepturi quis officia, atque itaque aspernatur consequuntur! Eaque nesciunt non nihil repellat nisi sequi repellendus voluptate, cupiditate expedita deleniti asperiores voluptatibus perferendis laboriosam voluptates hic quia quam illum. Eum error corrupti, incidunt odit nobis dolorem porro atque omnis? Non sapiente nobis sint nulla eum? Ducimus labore eveniet tenetur consectetur animi aliquid quasi. Ipsa autem, asperiores ullam quod maxime nihil maiores tempore! Dolorem, distinctio quaerat!</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="ijt">
+            <div class="row">
+                <div class="col">
+                    <a href="#">Book Now</a>
+                    <h1>20% off</h1>
+                    <img src="./pc-computer-accessories.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./pc-computer-accessories.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./pc-computer-accessories.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="ijt">
+            <div class="row">
+                <div class="col">
+                    <img src="./pc-computer-accessories.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./pc-computer-accessories.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./pc-computer-accessories.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, numquam.</p>
+        </div>
+
+    </div>
+</body>
+</html>

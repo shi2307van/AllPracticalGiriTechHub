@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+            min-height: 680px;
+            background-image: url(./WhatsApp\ Image\ 2024-06-21\ at\ 12.59.24_d3c6ac9e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+           
+        }
+        .header{
+            display: flex;
+        }
+        .logo{
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+        .logo img{
+            width:100px;
+            height:100px;
+            border-radius: 50%;
+        }
+        .menu ul{
+            display: flex;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+        .menu ul li{
+            list-style: none;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .menu ul a:hover{
+            background-color: white;
+            color: black;
+        }
+        .menu{
+            margin-top: 50px;
+            margin-left: 300px;
+        }
+        .btn button{
+            padding: 15px;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 50px;
+            margin-left: 70px;
+            background-color: rgb(231, 95, 203);
+            color: white;
+        }
+        .btn button:hover{
+            background-color: white;
+            color:rgb(231, 95, 203) ;
+        }
+        .login{
+            position: absolute;
+            width: 400px;
+            min-height: 300px;
+            border: 1px solid white;
+            top: 30%;
+            left: 70%;
+            translate: transform(-50,-50);
+            border-radius: 5%;
+        }
+        .login label{
+            color: white;
+            width: 100%;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 15px;
+        }
+        .login input[type=text], input[type=email],input[type=password]{
+            color: black;
+            width: 94%;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 22px;
+        }
+        .login h1{
+            color: white;
+            text-align: center;
+        }
+        .login .btn{
+            background-color: rgb(209, 112, 195);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .login .btn:hover{
+            background-color: white;
+            color:rgb(231, 95, 203) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <img src="./download.jpeg" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Servies</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button>Contact us</button>
+            </div>
+        </div>
+        <div class="login">
+            <h1>LOGIN</h1>
+            <form action="" method="post">
+                <label for="uname">User Name</label> <br>
+                <input type="text" name="uname" class="uname"> <br>
+                <label for="email">Email</label> <br>
+                <input type="email" name="email" class="email"> <br>
+                <label for="password">Password</label> <br>
+                <input type="password" name="password" class="password"> <br>
+                <input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

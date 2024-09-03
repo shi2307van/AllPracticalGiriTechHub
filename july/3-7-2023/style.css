@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Robot Slab",serif;
+}
+.wrapper
+{
+    width: 60%;
+    min-height: 100px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+
+}
+.main-header
+{
+    width: 100%;
+    background-color: lightgray;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.main-header .logo
+{
+    width: 100%;
+    background-color: lightgray;
+}
+.main-header .logo img{
+    border-radius: 50%;
+}
+.main-header .menu{
+    width: 100%;
+    background-color: lightgrey;
+}
+.menu ul{
+    list-style-type: none;
+    width: 100%;
+}
+.menu ul li{
+    display: inline-block ;
+    padding-top: 33px;
+}
+.menu ul li a{
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size:20px;
+    font-weight: bold;
+}
+.slider
+{
+    width: 100%;
+    grid-column: 1/-1;;
+}
+.slider img{
+    width: 100%;
+}
+.box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column: 1/-1;
+}
+.box .b{
+    width: 99%;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+}
+.box .b img{
+    width: 100%;
+}
+.box .b:nth-child(1)
+{
+    margin-left: 5px;
+}
+.box .b:nth-child(3)
+{
+    margin-left: -3px;
+}
+.footer
+{
+    width: 100%;
+    grid-column: 1/-1;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}

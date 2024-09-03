@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .main{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        .con{
+            display: flex;
+        }
+       .ph{
+        padding-left: 10px;
+        padding-right: 20px;
+       }
+        .first{
+            width: 100%;
+            height: 500px;
+            background-image: url('./WhatsApp\ Image\ 2024-06-21\ at\ 12.59.24_d3c6ac9e.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header{
+            display: flex;
+        }
+        .logo img{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            margin-left:100px;
+            margin-top:20px;
+        }
+        .menu{
+            margin-left:300px;
+            margin-top:40px;
+        }
+        .menu ul{
+            display:flex;
+        }
+        .menu li{
+            list-style:none;
+        }
+        .menu li a{
+            text-decoration:none;
+            color:  white;
+            font-size: 17px;
+            font-weight: 800;
+            padding:20px;
+        }
+        .menu li a:hover{
+            background-color: blue;
+            color: white;
+        }
+        .btn{
+            margin: 34px;
+        }
+        .btn button{
+            padding: 19px;
+            color: black;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .contain{
+            width: 20%;
+            margin-left: 600px;
+        }
+        .contain h1{
+            font-weight: bolder;
+            font-family: monospace;
+            font-size: 50px;
+            color: white;
+        }
+        .contain p{
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+        .second{
+            width: 80%;
+            margin: auto;
+        }
+        .second .card{
+            display: flex;
+            margin-top: 30px;
+
+        }
+        .second .card .whatsapp{
+            width: 35%;
+            text-align: center;
+            background-color:rgb(198, 198, 198);
+            margin-right: 25px;
+            padding-bottom: 25px;
+        }
+        .second .card .location{
+            width: 35%;
+            text-align: center;
+            background-color:rgb(198, 198, 198);
+            margin-right: 25px;
+            padding-bottom: 25px;
+        }
+        .second .card .email{
+            width: 35%;
+            text-align: center;
+            background-color:rgb(198, 198, 198);
+            padding-bottom: 25px;
+        }
+        .card i{
+            font-size: 55px;
+            margin-top: 30px;
+        }
+        .images{
+            width: 50%;
+            height: 200px;
+            padding-right: 60px;
+        }
+        .images img{
+            width: 100%;
+            height: 500px;
+            margin-bottom: 40px;
+        }
+        .conform{
+            width: 50%;
+            min-height: 200px;
+        }
+        .form{
+            display: flex;
+            margin-top: 30px;
+            
+        }
+        .form input[type=text] 
+        {
+            width: 93%;
+            margin-top: 20px;
+            margin-left: 10px;
+            padding: 14px;
+            border: 1px solid gainsboro;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .form textarea
+        {
+            width: 94%;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 10px;
+            border: 1px solid gainsboro;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .form .bton{
+            padding: 16px;
+            margin-left: 12px;
+            margin-top: 10px;
+            background-color: rgb(129, 81, 226);
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+        .name{
+            display: flex;
+        }
+        .third{
+            width: 100%;
+            height: 200px;
+            background-image: url(./group.jpeg);
+            background-repeat:no-repeat;
+            background-size:1900px 500px;
+            margin-top: 50px;
+            background-position:center;
+        }
+        .blue{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(0, 0, 2);
+            opacity: 0.6;
+        }
+        .third .blue h1{
+            color: white;
+        }
+        .third .blue .info {
+            width: 100%;
+            display: flex;
+            margin-left: 230px;
+        }
+        .info h1{
+            width: 70%;
+            margin-top: 50px;
+        }
+        .info .cont{
+            width: 30%;
+            width: 90px;
+            height: 40px;
+            margin-top: 65px;
+            background-color:transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        .fourth{
+            width: 100%;
+            display: flex;
+          
+        }
+        .f1{
+            width: 40%;
+            color: white;
+            margin-top: 100px;
+            margin-left:100px ;
+            margin-bottom: 50px;
+        }
+        .f1 img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+        }
+        .f2{
+            width: 25%;
+            margin-top: 100px;
+        }
+        .f3{
+            width: 25%;
+            margin-top: 100px;
+            
+        }
+        .f4{
+            width: 25%;
+            color: white;
+            margin-top: 100px;
+            
+        }
+        .fmain{
+            background-color: black;
+            width: 100%;
+            min-height: 200px;
+        }
+        .fourth a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="con">
+            <i class="fa-solid fa-phone"></i> <span class="ph">9023844654</span> 
+            <i class="fa-solid fa-location-dot"></i>MON-FRI 00-17-8900
+        </div>
+        <div class="first">
+            <div class="header">
+                <div class="logo">
+                    <img src="./big-white-tree.webp" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">HOMEPAGES</a></li>
+                        <li><a href="">SERVIES</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">PAGES</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button>FREE QUOTE</button>
+                </div>
+            </div>
+            <div class="contain">
+                <h1>Contact Us</h1>
+                <p>HOME > CONTACT US</p>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="card">
+                <div class="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <h4>Phone</h4>
+                  <span>9023844654</span> <br>
+                  <span>9898861552</span>
+                </div>
+                <div class="location">
+                 <i class="fa-solid fa-location-dot"></i>
+                  <h4>Phone</h4>
+                  <span>119,priyanka green </span> <br> <span> park ,bhestan ,surat .</span> 
+                </div>
+                <div class="email">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  <h4>Phone</h4>
+                  <span>shivanishinde@gmail.com</span> <br>
+                  <span>linga@gmail.com</span>
+                </div>
+            </div>
+            <div class="form">
+                <div class="images">
+                    <img src="./group_discusstion.jpeg" alt="">
+                </div>
+                <div class="conform">
+                    <span style="color: blue;font-weight:bold;font-size:17px">GET IN TOUCH</span>
+                    <h1 style="font-size: 40px;">Let's discuss your project right now</h1>
+                    <form action="" method="post">
+                        <div class="name">
+                            <input type="text" name="fname" class="fname" placeholder="First Name">
+                            <input type="text" name="lname" class="lname" placeholder="Last Name">
+                        </div>
+                        <input type="text" name="phone" id="phone" placeholder="Your Phone">
+                        <input type="text" name="email" id="email" placeholder="Your Email">
+                        <textarea name="msg" id="msg" placeholder="Message"></textarea>
+                        <button class="bton" type="submit">SEND MESSAGE</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="third">
+            <div class="blue">
+                <div class="info">
+                    <h1>Ask us your questions about your next <br> web design project. </h1>
+                    <button class="cont" type="submit">Contact Us</button>
+                </div>
+            </div>
+        </div>
+        <div class="fmain">
+        <div class="fourth">
+            <div class="f1">
+                <img src="./big-white-tree.webp" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, <br> dolorum. Lorem ipsum, dolor sit  </p>
+            </div>
+            <div class="f2">
+                <h3 style="color: white;">Company</h3> 
+                <a href="#">About company</a> <br> 
+                <a href="#">Our services</a> <br> 
+                <a href="#">Job category</a> <br>
+                <a href="#">Contact us</a> <br>
+            </div>
+            <div class="f3">
+                <h3 style="color: white;">Services</h3>
+                <a href="#">Content blog</a> <br>
+                <a href="#">Content writing</a> <br>
+                <a href="#">Content reading</a> <br>
+                <a href="#">Web desinging </a> <br>
+                <a href="#">Mobile application</a> <br>
+            </div>
+            <div class="f4">
+                <h3>Where are we ?</h3>
+                <h4>Address :- 119 priynaka <br> green park,bhetsan ,surat</h4>
+                <h4>Phone No :- 9023844654</h4>
+                <h4>Email :- shivanishinde@gmail.com</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

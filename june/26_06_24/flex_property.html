@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            width: 500px;
+            height:100px;
+            background-color: pink;
+            display: flex;/*display the element in row wise*/
+            flex-direction:row;/*display the element in column wise*/
+            flex-wrap:wrap;/*wrap element*/
+            justify-content:space-evenly;/*use horizontally*/
+            align-items:start;/*use vertically*/
+            flex-basis:100px;
+            gap: 10px;
+        }
+        .item1{
+           flex-basis: 50px;
+            height: 30px;
+            color: white;
+            background-color: blue;
+            order: 1;
+        }
+        .item2{
+            width: 50px;
+            height: 30px;
+            color: white;
+            background-color: rgb(94, 255, 0);
+            order: 2;
+        }
+        .item3{
+            width: 50px;
+            height: 30px;
+            color: white;
+            background-color: rgb(255, 0, 8);
+            order: 3;
+        }
+        .item4{
+            width: 50px;
+            height: 30px;
+            color: white;
+            background-color: rgb(255, 0, 157);
+            order: 4;
+        }
+        .item5{
+            width: 50px;
+            height: 30px;
+            color: white;
+            background-color: rgb(0, 255, 242);
+            order: 5;
+        }
+        .item6{
+            width: 50px;
+            height: 30px;
+            color: white;
+            background-color: rgb(217, 115, 171);
+            order: 6;
+        }
+        .item7{
+            width: 50px;
+            height: 30px;
+            color: white;
+            background-color: rgb(212, 151, 158);
+            order: 7;
+        }
+        .item8{
+            width: 50px;
+            height: 30px;
+            color: white;
+            background-color: rgb(212, 101, 226);
+            order: 8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">BOX1</div>
+        <div class="item2">BOX2</div>
+        <div class="item3">BOX3</div>
+        <div class="item4">BOX4</div>
+        <div class="item5">BOX5</div>
+        <div class="item6">BOX6</div>
+        <div class="item7">BOX7</div>
+        <div class="item8">BOX8</div>
+    </div>
+</body>
+</html>

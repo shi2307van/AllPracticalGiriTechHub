@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.maindiv{
+    border: 3px solid black;
+    width: 80%;
+    min-height: 100px;
+    margin: auto;
+    background-color: brown;
+}
+.header{
+    width: 100%;
+    min-height: 80px;
+    background-color: lightslategrey;
+}
+.cheader{
+    float: left;
+}
+.clogo{
+    float: right;
+    padding-right: 20px;
+}
+.clogo img{
+    border-radius: 50%;
+}
+.header h1{
+    color: white;
+    padding:15px;
+}
+.menudiv{
+    height: 60px;
+    width: 100%;
+    background-color:lightcoral;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.menudiv a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 25px;
+}
+.maindiv a:hover{
+    background-color: red;
+}
+#imgdiv{
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    background-color: aliceblue;
+}
+#imgdiv img{
+    height: 100%;
+    width: 100%;
+}
+.content-div{
+    text-align: justify;
+    padding-top: 10px;
+}
+.content-div p{
+    background-color: aliceblue;
+}
+.content-div p::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+.content-div p:hover{
+    color: pink;
+}
+.content-div p::selection{
+    background-color: yellowgreen;
+    color: white;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(168, 174, 181);
+    min-height: 50px;
+    padding-top: 10px;
+    color: white;
+}
+.footer-text{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.footer-img{
+    float: right;
+}

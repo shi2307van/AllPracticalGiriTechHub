@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            min-height: 100px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .main-Header
+        {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height:60px;
+        }
+        .main-Header .logo
+        {
+            flex-basis: 40%;
+            background-color: black;
+        }
+        .logo h1{
+            color: white;
+            padding: 20px;
+            font-size: 2em;
+        }
+        .main-Header .menu
+        {
+            flex-basis: 60%;
+            background-color: black;
+        }
+        .menu ul{
+            list-style: none;
+            width: 100%;
+        }
+        .menu ul li{
+            display: inline-block;
+            padding-top: 30px;
+        }
+        .menu ul li a{
+            color: white;
+            text-decoration: none;
+            padding: 30px 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .slider{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            min-height: 300px;
+            margin-top: 5px;
+        }
+        .slider img{
+            width: 100%;
+        }
+        .main-prod{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 300px;
+            margin-top: 5px;
+        }
+        .main-prod .row{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 300px;
+            justify-content: space-around;
+            margin-top: 5px;
+        }
+        .main-prod .row .col{
+            display: flex;
+            flex-direction: row;
+            flex-basis:32%;
+            justify-content: center;
+            align-items: center;
+        }
+        .col img{
+            width: 100%;
+        }
+        .footer 
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            min-height: 60px;
+            margin-top: 5px;
+        }
+        .footer p{
+            color: white;
+            font-size: 1.2em;
+        }
+        @media only screen and (max-width:768px){
+            .container{
+                width: 100%;
+            }
+            .main-Header{
+                flex-direction: column;
+            }
+            .main-Header .logo h1{
+                font:8vw;
+            }
+            .main-Header .menu ul li{
+                display: block;
+                padding-left: 10px;
+            }
+            .slider img{
+                width: 100%;
+                object-fit: fill;
+            }
+            .main-prod .row{
+                flex-direction: column;
+                width: 100%;
+            }
+            .main-prod.col img{
+                margin-bottom:5px;
+                width: 100%;
+                object-fit: fill;
+            }
+            .footer p{
+                font-size: 4vw;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-Header">
+            <div class="logo">
+                <h1>Company Name</h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>   
+        </div>
+
+        <div class="slider">
+            <img src="./bullet.jpeg" alt="">
+        </div>
+
+        <div class="main-prod">
+            <div class="row">
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+                <div class="col">
+                    <img src="./burger_1.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>This website maintain by ABC company &copy2024.</p>
+        </div>
+    </div>
+</body>
+</html>

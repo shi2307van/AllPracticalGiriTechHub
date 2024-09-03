@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css cascading order</title>
+    <link rel="stylesheet" href="./css_order.css">
+    <style>
+        p{
+            background-color: rgb(110, 8, 243);
+        }
+        h1{
+            background-color: brown;
+        }
+        div{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: rgb(216, 220, 220);">
+        <p style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt quas quibusdam modi dolore exercitationem nam natus quae corporis at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda nisi tenetur maxime harum ipsa enim quae sequi voluptate odio!</p>
+        <h1 style="background-color: aqua;">Heading 1</h1>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in ut nulla doloribus quibusdam amet aperiam, a quasi delectus dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis aspernatur voluptate et. Aspernatur ducimus cumque commodi sit velit minima ipsa.
+        </p>
+        <h1>Heading 2</h1>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vero neque distinctio rerum provident modi nesciunt veritatis cumque quibusdam alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit dignissimos doloribus quisquam, sunt quam itaque earum aliquam voluptas natus!
+        </p>
+        <h1>Heading 3</h1>
+    </div>
+</body>
+</html>
